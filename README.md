@@ -1,2 +1,2 @@
 # sameboy-appimage
-Appimage for sameboy emulator
+Appimage for sameboy emulator.
