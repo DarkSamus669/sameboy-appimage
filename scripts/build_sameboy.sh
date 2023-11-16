@@ -29,4 +29,4 @@ cd SameBoy-0.15.8
 
 make -j`nproc` CONF=release
 
-make install DESTDIR=AppDir PREFIX=usr
+make install DESTDIR=AppDir
