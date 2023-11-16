@@ -14,6 +14,9 @@ cd rgbds
 make -j`nproc` && sudo make install
 
 # Download sameboy source
+
+cd ..
+
 wget -q "https://github.com/LIJI32/SameBoy/archive/refs/tags/v0.15.8.tar.gz" \
      -O sameboy.tar.gz
 
@@ -22,7 +25,7 @@ tar -xf sameboy.tar.gz
 
 # Build sameboy
 
-cd ../SameBoy-0.15.8
+cd SameBoy-0.15.8
 
 make -j`nproc` CONF=release
 
