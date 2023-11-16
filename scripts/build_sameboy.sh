@@ -31,4 +31,4 @@ make -j`nproc` CONF=release
 
 make install PREFIX=AppDir/usr
 
-cp AppDir/usr/share/sameboy/*.bin AppDir/usr/bin
+cp AppDir/usr/share/sameboy/* AppDir/usr/bin
