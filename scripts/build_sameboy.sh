@@ -9,13 +9,13 @@ tar -xf rgbds.tar.gz
 
 # Build rgbds
 
-cd rgbds-0.6.1
+cd rgbds
 
 make -j`nproc` && sudo make install
 
 # Download sameboy source
 wget -q "https://github.com/LIJI32/SameBoy/archive/refs/tags/v0.15.8.tar.gz" \
-	 -O sameboy.tar.gz
+     -O sameboy.tar.gz
 
 # Extract sameboy source
 tar -xf sameboy.tar.gz
