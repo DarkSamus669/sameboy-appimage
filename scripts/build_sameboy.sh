@@ -30,3 +30,5 @@ cd SameBoy-0.15.8
 make -j`nproc` CONF=release
 
 make install PREFIX=AppDir/usr
+
+cp AppDir/usr/share/sameboy/*.bin AppDir/usr/bin
