@@ -11,10 +11,8 @@ chmod +x linuxdeploy-x86_64.AppImage appimagetool-x86_64.AppImage
 
 # Run linuxdeploy
 
-./linuxdeploy-x86_64.AppImage -i AppDir/usr/share/icons/hicolor/512x512/apps/sameboy.png \
-		-d FreeDesktop/sameboy.desktop \
-		--executable AppDir/usr/bin/sameboy \
-		--appdir AppDir
+./linuxdeploy-x86_64.AppImage --icon-file "AppDir/usr/share/icons/hicolor/512x512/apps/sameboy.png" \
+		                      --desktop-file "FreeDesktop/sameboy.desktop" --appdir AppDir
 
 # Pack appdir
 
