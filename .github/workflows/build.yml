@@ -47,5 +47,6 @@ jobs:
         with:
           name: SameBoy-0.15.8-x86_64
           path: |
+            SameBoy-0.15.8/SameBoy-0.15.8-x86_64.tar.gz
             SameBoy-0.15.8/SameBoy-0.15.8-x86_64.AppImage
             SameBoy-0.15.8/SameBoy-0.15.8-x86_64.AppImage.zsync
