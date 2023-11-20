@@ -14,7 +14,7 @@ chmod +x linuxdeploy-x86_64.AppImage
 export ARCH=x86_64
 export OUTPUT="SameBoy-0.15.8-x86_64.AppImage"
 
-export UPDATE_INFORMATION="gh-releases-zsync|DarkSamus669|sameboy-appimage|SameBoy-0.15.8-x86_64.AppImage"
+export UPDATE_INFORMATION="gh-releases-zsync|DarkSamus669|sameboy-appimage|SameBoy-*x86_64.AppImage"
 
 ./linuxdeploy-x86_64.AppImage -i AppDir/usr/share/icons/hicolor/512x512/apps/sameboy.png \
 		-d FreeDesktop/sameboy.desktop \
