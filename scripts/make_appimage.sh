@@ -9,11 +9,6 @@ wget -q "https://github.com/AppImage/AppImageKit/releases/download/continuous/ap
 
 chmod +x linuxdeploy-x86_64.AppImage appimagetool-x86_64.AppImage
 
-# Run linuxdeploy
-
-./linuxdeploy-x86_64.AppImage --icon-file "AppDir/usr/share/icons/hicolor/512x512/apps/sameboy.png" \
-		                      --desktop-file "FreeDesktop/sameboy.desktop" --appdir AppDir
-
 # Pack appdir
 
 cp -r AppDir SameBoy
@@ -23,5 +18,8 @@ tar -cf SameBoy-x86_64.tar SameBoy
 gzip -9 SameBoy-x86_64.tar
 
 # Build appimage
+
+./linuxdeploy-x86_64.AppImage --icon-file "AppDir/usr/share/icons/hicolor/512x512/apps/sameboy.png" \
+		              --desktop-file "FreeDesktop/sameboy.desktop" --appdir AppDir
 
 ./appimagetool-x86_64.AppImage -u "gh-releases-zsync|DarkSamus669|sameboy-appimage|SameBoy-x86_64.AppImage" AppDir
