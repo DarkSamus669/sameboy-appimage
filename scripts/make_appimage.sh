@@ -18,9 +18,9 @@ chmod +x linuxdeploy-x86_64.AppImage appimagetool-x86_64.AppImage
 
 cp -r AppDir SameBoy
 
-tar -cf SameBoy-0.15.8.tar SameBoy 
+tar -cf SameBoy-0.15.8-x86_64.tar SameBoy 
 
-gzip -9 Sameboy-0.15.8.tar
+gzip -9 Sameboy-0.15.8-x86_64.tar
 
 # Build appimage
 
