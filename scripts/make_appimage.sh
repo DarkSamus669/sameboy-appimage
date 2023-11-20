@@ -18,13 +18,10 @@ chmod +x linuxdeploy-x86_64.AppImage appimagetool-x86_64.AppImage
 
 cp -r AppDir SameBoy
 
-tar -cf SameBoy-0.15.8-x86_64.tar SameBoy 
+tar -cf SameBoy-x86_64.tar SameBoy
 
-gzip -9 Sameboy-0.15.8-x86_64.tar
+gzip -9 SameBoy-x86_64.tar
 
 # Build appimage
 
-export APPIMAGETOOL_APP_NAME="SameBoy-0.15.8-x86_64.AppImage"
-
-./appimagetool-x86_64.AppImage -u "gh-releases-zsync|DarkSamus669|sameboy-appimage|SameBoy-*x86_64.AppImage" AppDir
-
+./appimagetool-x86_64.AppImage -u "gh-releases-zsync|DarkSamus669|sameboy-appimage|SameBoy-x86_64.AppImage" AppDir
